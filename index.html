@@ -6,12 +6,44 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<label id="search">
-  <span>Type any location:</span>
-  <input id="location" type="text" placeholder="Location">
-  <button id="submit" type="button">Check the Weather</button>
-</label>
-<script src="js/api.js"></script>
-<script src="js/main.js"></script>
+  <label id="search">
+    <span>Type any location:</span>
+    <input id="query" type="text" placeholder="Location">
+    <button id="submit" type="button">Check the Weather</button>
+  </label>
+  <div id="message"></div>
+  <div id="result">
+    <img id="icon" src="" alt="icon">
+    <div id="location" class="size-normal"></div>
+    <div>
+      <span id="temperature" class="size-large"></span>
+      <sup>°C</sup>
+    </div>
+    <div>
+      <span>(</span>
+      <span id="feels_like" class="size-normal"></span>
+      <sup>°C</sup>
+      <span>)</span>
+    </div>
+    <br>
+    <div id="description"></div>
+    <span class="size-small">
+      <span class="size-normal">↑</span>
+      <span id="maximum"></span>
+      <sup class="size-small">°C</sup>
+    </span>
+    <span class="size-small">
+      <span class="size-normal">↓</span>
+      <span id="minimum"></span>
+      <sup class="size-small">°C</sup>
+    </span>
+    <div><br></div>
+    <!-- TODO: make graph for sunrise and sunset -->
+    <div id="sunrise"></div>
+    <div id="sunset"></div>
+  </div>
+  <script src="js/api.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
