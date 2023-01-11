@@ -1,0 +1,32 @@
+* {
+ font-family: monospace;
+}
+:root {
+ --primary: #008c8c;
+ --dark: #2e6464;
+}
+body {
+ background: #333;
+ color: #fff;
+}
+#search {
+ width: 220px;
+}
+#search * {
+ display: block;
+ text-align: center;
+ margin: 5px auto;
+ padding: 0;
+ width: 220px;
+ height: 25px;
+}
+#location {
+ border: none;
+ outline: none;
+ margin-bottom: 10px;
+}
+#submit {
+ background: linear-gradient(var(--primary), var(--dark));
+ border: none;
+ color: #fff;
+}
